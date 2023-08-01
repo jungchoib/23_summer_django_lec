@@ -14,7 +14,3 @@ def login_new(request):
     return render(request, 'pages/logIn_new.html')
 def login_search(request):
     return render(request, 'pages/logIn_search.html')
-def item1(request):
-    return render(request, 'pages/item1.html')
-def item2(request):
-    return render(request, 'pages/item2.html')

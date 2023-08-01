@@ -1,97 +1,30 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="ko">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>회사소개</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<nav>-->
-<!--    <a href="/company/">company info</a>-->
-<!--    <a href="/mysite/">product</a>-->
-<!--</nav>-->
+<!-- File: mysite/content_list.html -->
+{% extends 'base.html' %}
 
-<!--<h1>회사소개 페이지입니다.</h1>-->
-<!--</body>-->
-<!--</html>-->
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="ko">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>메인 페이지</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<nav>-->
-<!--    <a href="/company/">company info</a>-->
-<!--    <a href="/mysite/">product</a>-->
-<!--</nav>-->
-
-<!--<h1>메인 페이지입니다.</h1> </body>-->
-<!--</html>-->
-
-<!DOCTYPE html>
-{% load static %}
-<html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Small Business - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min' %}" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                <a class="navbar-brand" href="/main/">JH.CO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/main/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/company/">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/mysite/">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/login/">Log in</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container px-4 px-lg-5">
-            <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://stewkley.org.uk/wp-content/uploads/2016/05/Stewkley-Wildlife-Reserve-900-x-400.jpg" alt="..." /></div>
-                <div class="col-lg-5">
-                    <h1 class="font-weight-light">Business Introduction</h1>
-                    <p>회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://stewkley.org.uk/wp-content/uploads/2016/05/Stewkley-Wildlife-Reserve-900-x-400.jpg" alt="..." /></div>
-                <div class="col-lg-5">
-                    <p>왼쪽에는 지도data 여기 text에는 연락처가 들어갈 예정입니다.</p>
-                    <h1 class="font-weight-light">연락처 1</h1>
-                    <p>010-1234-5678</p>
-                    <h1 class="font-weight-light">연락처 2</h1>
-                    <p>010-1234-5678</p>
-                    <a class="btn btn-primary" href="#!">2계열사 홈페이지link</a>
-                    <h1 class="font-weight-light">연락처 3</h1>
-                    <p>010-1234-5678</p>
-                    <a class="btn btn-primary" href="#!">3계열사 홈페이지link</a>
-                </div>
-            </div>
+{% block content %}
+<!-- Page Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://stewkley.org.uk/wp-content/uploads/2016/05/Stewkley-Wildlife-Reserve-900-x-400.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">Business Introduction</h1>
+            <p>회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.회사소개 내용이 길게 들어갈 부분입니다.</p>
         </div>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
-<!--        &lt;!&ndash; Core theme JS&ndash;&gt;-->
-<!--        <script src="js/scripts.js"></script>-->
-    </body>
-</html>
+    </div>
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://stewkley.org.uk/wp-content/uploads/2016/05/Stewkley-Wildlife-Reserve-900-x-400.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <p>왼쪽에는 지도data 여기 text에는 연락처가 들어갈 예정입니다.</p>
+            <h1 class="font-weight-light">연락처 1</h1>
+            <p>010-1234-5678</p>
+            <h1 class="font-weight-light">연락처 2</h1>
+            <p>010-1234-5678</p>
+            <a class="btn btn-primary" href="#!">2계열사 홈페이지link</a>
+            <h1 class="font-weight-light">연락처 3</h1>
+            <p>010-1234-5678</p>
+            <a class="btn btn-primary" href="#!">3계열사 홈페이지link</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
